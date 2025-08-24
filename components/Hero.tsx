@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Hero() {
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
+    <section id='hero' className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
       {/* Background Image - Temporarily commented out until proper image is added */}
       {/* <div className="absolute inset-0 overflow-hidden">
         <Image 
@@ -57,7 +57,7 @@ export default function Hero() {
           {/* Call-to-action buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/contact"
+              href="#contact"
               className="btn-primary inline-flex items-center gap-2 group"
             >
               <Zap className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />

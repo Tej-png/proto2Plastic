@@ -15,27 +15,23 @@ export default function Footer() {
       { name: 'Consulting', href: '/services#consulting' },
     ],
     company: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Our Team', href: '/about#team' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Press', href: '/press' },
+      { name: 'About Us', href: '#about' },
     ],
     support: [
-      { name: 'Help Center', href: '/help' },
-      { name: 'Contact Us', href: '/contact' },
+      { name: 'Contact Us', href: '#contact' },
       { name: 'FAQ', href: '/faq' },
       { name: 'Shipping Info', href: '/shipping' },
     ],
-    legal: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Cookie Policy', href: '/cookies' },
-      { name: 'GDPR', href: '/gdpr' },
-    ],
+    // legal: [
+    //   { name: 'Privacy Policy', href: '/privacy' },
+    //   { name: 'Terms of Service', href: '/terms' },
+    //   { name: 'Cookie Policy', href: '/cookies' },
+    //   { name: 'GDPR', href: '/gdpr' },
+    // ],
   }
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer id='footer' className="bg-gray-900 text-white">
       <div className="container-custom">
         {/* Main footer content */}
         <div className="py-16 px-4 sm:px-6 lg:px-8">
@@ -62,7 +58,7 @@ export default function Footer() {
                   {['Twitter', 'LinkedIn', 'Instagram', 'YouTube'].map((platform) => (
                     <a
                       key={platform}
-                      href={`https://${platform.toLowerCase()}.com/print3dpro`}
+                      href={`https://${platform.toLowerCase()}.com/proto2plastic`}
                       className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-300"
                       aria-label={`Follow us on ${platform}`}
                     >
@@ -112,7 +108,7 @@ export default function Footer() {
               viewport={{ once: true }}
               className="text-gray-400 text-sm"
             >
-              © 2024 Print3D Pro. All rights reserved.
+              © 2025 Proto2Plastic. All rights reserved.
             </motion.p>
             
             <motion.div

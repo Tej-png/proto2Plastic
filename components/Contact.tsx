@@ -10,7 +10,8 @@ const contactInfo = [
     icon: Phone,
     title: 'Call Us',
     details: [
-      '+1 437-599-2346',
+      '+1 (905) 431-7999',
+      '+1 (437) 599-2346',
       'Mon-Fri 9AM-6PM PST'
     ],
     color: 'green',
@@ -68,7 +69,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section id='contact' className="section-padding bg-gray-50">
       <div className="container-custom">
         {/* Section header */}
         <div className="text-center mb-16">

@@ -11,11 +11,11 @@ export default function Header() {
 
   // Navigation items
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Home', href: '#hero' },
+    { name: 'Services', href: '#services' },
+    // { name: 'Portfolio', href: '#portfolio' },
+    { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   // Animation variants for mobile menu
@@ -79,7 +79,7 @@ export default function Header() {
             className="hidden md:block"
           >
             <Link
-              href="/contact"
+              href="#contact"
               className="btn-primary inline-flex items-center"
             >
               Get Quote
@@ -123,7 +123,7 @@ export default function Header() {
             ))}
             <div className="pt-4">
               <Link
-                href="/contact"
+                href="#contact"
                 className="btn-primary w-full text-center"
                 onClick={() => setIsMenuOpen(false)}
               >

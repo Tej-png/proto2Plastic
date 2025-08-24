@@ -50,7 +50,7 @@ const servicesData = [
 // Services section component with animated cards
 export default function Services() {
   return (
-    <section className="section-padding bg-gray-50">
+    <section id="services" className="section-padding bg-gray-50">
       <div className="container-custom">
         {/* Section header */}
         <div className="text-center mb-16">
