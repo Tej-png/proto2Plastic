@@ -4,6 +4,7 @@ import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import AboutPage from './about/page'
 
 // Main homepage component that combines all sections
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <Services />
       
       {/* Portfolio section displaying completed projects */}
-      <Portfolio />
+      <AboutPage></AboutPage>
       
       {/* Contact section with form and contact information */}
       <Contact />
