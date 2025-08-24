@@ -17,23 +17,24 @@
 @layer components {
   /* Button styles */
   .btn-primary {
-    @apply bg-gradient-primary text-white px-6 py-3 rounded-lg font-semibold 
-           hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+    @apply bg-gradient-to-r from-pink-500 to-purple-500
+    text-white px-6 py-3 rounded-lg font-semibold 
+           hover:shadow-lg transition-transform duration-300 transform hover:scale-105;
   }
   
   .btn-secondary {
     @apply bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold border-2 border-gray-200
-           hover:border-gray-300 transition-all duration-300 transform hover:scale-105;
+           hover:border-gray-300 transition-transform duration-300 transform hover:scale-105;
   }
   
   /* Card styles */
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300;
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
   }
   
   /* Gradient text */
   .gradient-text {
-    @apply bg-gradient-primary bg-clip-text text-transparent;
+    @apply text-purple-500 bg-clip-text;
   }
   
   /* Section styles */
@@ -49,8 +50,10 @@
 
 /* Custom utilities */
 @layer utilities {
+  /* Safer alternative for text wrapping */
   .text-balance {
-    text-wrap: balance;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }
-
