@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion'
 import { Zap, Play } from 'lucide-react'
 import Link from 'next/link'
+import Image from "next/image";
 
 // Hero section component with animated content
 export default function Hero() {
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
       {/* Background Image - Temporarily commented out until proper image is added */}
       {/* <div className="absolute inset-0 overflow-hidden">
         <Image 
@@ -19,6 +20,8 @@ export default function Hero() {
           priority
         />
       </div> */}
+
+      <Image src="/images/3d-printer-bg.png" alt="3D Printer Background" fill className="object-cover opacity-90" priority />
 
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -47,7 +50,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your wildest ideas into reality with cutting-edge 3D printing 
+            Transform your wildest ideas into reality with cutting-edge 3D printing
             technology. Fast, precise, and absolutely mind-blowing results.
           </p>
 
@@ -60,7 +63,7 @@ export default function Hero() {
               <Zap className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Start Creating
             </Link>
-            
+
             <Link
               href="#demo"
               className="btn-secondary inline-flex items-center gap-2 group"
