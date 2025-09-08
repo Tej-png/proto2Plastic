@@ -2,6 +2,12 @@
 
 import { useState } from 'react'
 import { Phone, Mail, Clock, Send } from 'lucide-react'
+import { Resend } from 'resend';
+
+import { useRouter } from "next/navigation";
+
+const apiKey = process.env.NEXT_PUBLIC_RESEND_API_KEY
+console.log(apiKey)
 
 // Contact information data
 const contactInfo = [
@@ -36,8 +42,40 @@ const contactInfo = [
   },
 ]
 
+type EmailPayload = {
+  email: string;
+  subject: string;
+  message: string;
+};
+
+export async function sendEmail( payload: EmailPayload): Promise<any> {
+  
+ 
+  try {
+    const res = await fetch("/api/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      throw new Error(`Failed to send email: ${res.statusText}`);
+    }
+
+    const data = await res.json();
+    console.log("done")
+    return data;
+  } catch (error) {
+    console.error("Error sending email:", error);
+    throw error;
+  }
+}
+
+
 // Contact section component with form and contact info
 export default function Contact() {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -55,17 +93,30 @@ export default function Contact() {
   }
 
   // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      projectType: '',
-      projectDetails: '',
-    })
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault(); // ✅ prevent page reload
+  
+    const { name, email, projectType, projectDetails } = formData;
+  
+    try {
+      await sendEmail({
+        email: email,
+        subject: projectType,
+        message: projectDetails,
+      });
+  
+      setFormData({
+        name: "",
+        email: "",
+        projectType: "",
+        projectDetails: "",
+      });
+  
+      router.push("/thanks"); // ✅ redirect after success
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Something went wrong. Please try again.");
+    }
   }
 
   return (
@@ -89,7 +140,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Start Your Project
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name field */}
                 <div>
@@ -183,7 +234,7 @@ export default function Contact() {
                   <div className={`w-12 h-12 rounded-xl bg-${info.color}-100 flex items-center justify-center flex-shrink-0`}>
                     <info.icon className={`w-6 h-6 text-${info.color}-600`} />
                   </div>
-                  
+
                   {/* Content */}
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-2">
