@@ -3,7 +3,6 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
-console.log("key " + process.env.NEXT_PUBLIC_RESEND_API_KEY )
 
 export async function POST(req: NextResponse) {
 
@@ -12,7 +11,6 @@ export async function POST(req: NextResponse) {
    
     const data = await req.json();
 
-    console.log(data);
     const { name, email, message } = data;
 
     await resend.emails.send({

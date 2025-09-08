@@ -6,6 +6,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function Send(req: NextApiRequest, res: NextApiResponse) {
     'use server'
-    console.log('hellow world')
+  
 
 };

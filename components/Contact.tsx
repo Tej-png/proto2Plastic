@@ -2,12 +2,9 @@
 
 import { useState } from 'react'
 import { Phone, Mail, Clock, Send } from 'lucide-react'
-import { Resend } from 'resend';
 
 import { useRouter } from "next/navigation";
 
-const apiKey = process.env.NEXT_PUBLIC_RESEND_API_KEY
-console.log(apiKey)
 
 // Contact information data
 const contactInfo = [
@@ -63,7 +60,6 @@ export async function sendEmail( payload: EmailPayload): Promise<any> {
     }
 
     const data = await res.json();
-    console.log("done")
     return data;
   } catch (error) {
     console.error("Error sending email:", error);
