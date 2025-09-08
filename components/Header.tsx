@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import Image from "next/image";
 
 // Header component with responsive navigation
 export default function Header() {
@@ -11,11 +12,10 @@ export default function Header() {
 
   // Navigation items
   const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'Services', href: '#services' },
-    // { name: 'Portfolio', href: '#portfolio' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'HOME', href: '#hero' },
+    { name: 'ABOUT US', href: '#aboutUs' },
+    { name: 'SERVICES', href: '#services' },
+    { name: 'CONTACT US', href: '#contact' },
   ]
 
   // Animation variants for mobile menu
@@ -48,7 +48,7 @@ export default function Header() {
             className="flex items-center"
           >
             <Link href="/" className="text-2xl font-bold gradient-text">
-              Proto2Plastic
+              <Image src="/images/proto2straight.png" alt="Proto2Plastic" width={200} height={50}   />
             </Link>
           </motion.div>
 

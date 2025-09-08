@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link"
+
 // Simple SVG icon components
 const CubeIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +57,7 @@ export default function Services() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Services
+            OUR SERVICES
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             From concept to creation, we&apos;ve got every step of your 3D printing journey covered.
@@ -101,9 +103,9 @@ export default function Services() {
 
                   {/* Learn More button */}
                   <div className="mt-auto">
-                    <button className={`w-full py-3 px-6 rounded-lg border-2 border-${service.color}-200 text-${service.color}-600 font-semibold hover:bg-${service.color}-50 transition-colors duration-300`}>
+                    <Link href="#contact"><button className={`w-full py-3 px-6 rounded-lg border-2 border-${service.color}-200 text-${service.color}-600 font-semibold hover:bg-${service.color}-50 transition-colors duration-300`}>
                       Learn More
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>

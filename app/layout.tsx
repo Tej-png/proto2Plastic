@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description: 'Transform your wildest ideas into reality with cutting-edge 3D printing technology. Fast, precise, and absolutely mind-blowing results.',
   keywords: '3D printing, prototyping, custom design, production scale, additive manufacturing',
   authors: [{ name: 'Proto2Plastic' }],
+  icons: {
+    icon: "/images/p2p.png",
+  },
   openGraph: {
     title: 'Proto2Plastic - Professional 3D Printing Services',
     description: 'Transform your wildest ideas into reality with cutting-edge 3D printing technology.',

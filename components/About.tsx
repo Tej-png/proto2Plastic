@@ -33,7 +33,7 @@ export default function About() {
 
   return (
     <>
-      <section id='about' className="section-padding bg-gradient-to-br from-primary-50 to-secondary-50">
+      <section id='aboutUs' className="section-padding bg-gradient-to-br from-primary-50 to-secondary-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

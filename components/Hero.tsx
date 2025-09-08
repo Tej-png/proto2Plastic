@@ -10,16 +10,6 @@ export default function Hero() {
 
   return (
     <section id='hero' className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
-      {/* Background Image - Temporarily commented out until proper image is added */}
-      {/* <div className="absolute inset-0 overflow-hidden">
-        <Image 
-          src="/images/3d-printer-bg.png" 
-          alt="3D Printer Background" 
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
-      </div> */}
 
       <Image src="/images/3d-printer-bg.png" alt="3D Printer Background" fill className="object-cover opacity-90" priority />
 
@@ -94,6 +84,8 @@ export default function Hero() {
           />
         </motion.div>
       </motion.div>
+
+      
     </section>
   )
 }
