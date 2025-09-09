@@ -9,9 +9,21 @@ import Image from "next/image";
 export default function Hero() {
 
   return (
-    <section id='hero' className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
+    <section id='hero'
+      className="relative min-h-screen flex items-center justify-center overflow-hidden  pt-16">
 
-      <Image src="/images/3d-printer-bg.png" alt="3D Printer Background" fill className="object-cover opacity-90" priority />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover "
+      >
+        <source src="/images/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* <Image src="/images/3d-printer-bg.png" alt="3D Printer Background" fill className="object-cover opacity-90" priority /> */}
 
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -85,7 +97,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      
+
     </section>
   )
 }
