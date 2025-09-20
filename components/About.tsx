@@ -101,7 +101,7 @@ export default function About() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gradient-primary rounded-2xl p-8 text-white"
+              className="bg-color rounded-2xl p-8 text-white"
             >
               <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
               <ul className="space-y-3">

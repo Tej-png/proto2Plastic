@@ -19,9 +19,11 @@ export default function Hero() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover "
       >
-        <source src="/images/bg.mp4" type="video/mp4" />
+        <source src="https://www.pexels.com/download/video/4125748/" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      {/* https://www.pexels.com/download/video/4125748/
+      https://www.pexels.com/download/video/24861249/ */}
 
       {/* <Image src="/images/3d-printer-bg.png" alt="3D Printer Background" fill className="object-cover opacity-90" priority /> */}
 
@@ -46,32 +48,25 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">Print Your</span>{' '}
-            <span className="text-gray-900">Future</span>
+            <span className="hero-text">Print Your</span>{' '}
+            <span className="text-neutral-100">FUTURE</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-neutral-200 mb-8 max-w-3xl mx-auto leading-relaxed">
             Transform your wildest ideas into reality with cutting-edge 3D printing
             technology. Fast, precise, and absolutely mind-blowing results.
           </p>
 
           {/* Call-to-action buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* <Image src='/images/letstalk.png'className='text-black' alt='Lets Talk' width={200} height={200} /> */}
             <Link
               href="#contact"
-              className="btn-primary inline-flex items-center gap-2 group"
+              className="btn-primary inline-flex items-center gap-2 text-lg group px-10 py-5"
             >
               <Zap className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-              Start Creating
-            </Link>
-
-            <Link
-              href="#demo"
-              className="btn-secondary inline-flex items-center gap-2 group"
-            >
-              <Play className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              Watch Demo
+             <p className='text-lg'>Lets talk</p>
             </Link>
           </div>
         </div>

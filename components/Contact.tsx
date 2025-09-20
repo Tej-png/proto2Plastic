@@ -10,16 +10,6 @@ import { useRouter } from "next/navigation";
 const contactInfo = [
 
   {
-    icon: Phone,
-    title: 'Call Us',
-    details: [
-      '+1 (905) 431-7999',
-      '+1 (437) 599-2346',
-      'Mon-Fri 9AM-6PM PST'
-    ],
-    color: 'green',
-  },
-  {
     icon: Mail,
     title: 'Email Us',
     details: [

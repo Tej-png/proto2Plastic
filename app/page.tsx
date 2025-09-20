@@ -17,6 +17,14 @@ export default function Home() {
       {/* Hero section with main call-to-action */}
       <Hero />
 
+      <HDIW />
+      <div className="flex justify-center space-x-4 my-8">
+        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
+        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
+        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
+        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
+      </div>
+
       {/* Portfolio section displaying completed projects */}
       <AboutPage></AboutPage>
 
@@ -27,13 +35,7 @@ export default function Home() {
         <div className="w-2 h-2 rounded-full bg-gray-500"></div>
       </div>
 
-      <HDIW />
-      <div className="flex justify-center space-x-4 my-8">
-        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
-        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
-        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
-        <div className="w-2 h-2 rounded-full bg-gray-500"></div>
-      </div>
+     
 
       {/* Services section showcasing 3D printing offerings */}
       <Services />

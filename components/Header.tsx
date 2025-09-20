@@ -63,7 +63,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+                  className="text-black-900 hover:text-purple-900 transition-colors duration-200 font-medium"
                 >
                   {item.name}
                 </Link>

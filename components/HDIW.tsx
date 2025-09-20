@@ -6,19 +6,22 @@ const servicesData = [
     {
         //   icon: Laptop or computer screen,
         title: 'Upload a 3D model and get a quote.',
-        description: 'Simply upload your .stl file to our website in the ‘Instant Quote’ tab. Once your specific parameters are selected you will recieve a price to print.',
+        description: 'get in contact to plan your project or send a cad file. Once your specific parameters are selected you will recieve a price to print.',
         features: ['Fast turnaround', 'Multiple materials', 'Precision details'],
+        image : '/images/weirdthing.png'
     },
     {
         //   icon: 3d printer image,
         title: 'Custom DesigPrinting of your 3D model commences.',
         description: 'Once you have accepted the quote we will start printing your prototype with the desired specifications. (note: Completion time is dependent upon size and quantity)',
         features: ['Personalized designs', 'Unlimited revisions', '3D visualization'],
+        image : '/images/boat.png'
     },
     {
         //   icon: delivery icon,
         title: 'Receive your newly created 3d model!',
         description: 'We give you the option of picking up your 3D print at our Hamilton-Westdale workshop, or the print can be shipped directly to you (Additional costs).',
+        image : '/images/truck.png'
        
     },
 ]
@@ -47,7 +50,7 @@ export default function About() {
                                     {/* Icon */}
                                     <div className="flex justify-center mb-20">
                                         <div className={`w-25 h-20 rounded-xl bg-gradient-to-br flex items-center justify-center `}>
-                                            <Image src="/images/delivery.svg" className='text-black' alt={service.title} width={200} height={200} />
+                                            <Image src={service.image} className='text-black' alt={service.title} width={200} height={200} />
                                         </div>
                                     </div>
 
