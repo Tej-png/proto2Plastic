@@ -19,7 +19,7 @@ export default function Hero() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover "
       >
-        <source src="https://www.pexels.com/download/video/4125748/" type="video/mp4" />
+        <source src="https://www.pexels.com/download/video/10613972/" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* https://www.pexels.com/download/video/4125748/
@@ -53,21 +53,21 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-neutral-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-black-200 mb-8 max-w-3xl mx-auto text-bold leading-relaxed">
             Transform your wildest ideas into reality with cutting-edge 3D printing
             technology. Fast, precise, and absolutely mind-blowing results.
           </p>
 
           {/* Call-to-action buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {/* <Image src='/images/letstalk.png'className='text-black' alt='Lets Talk' width={200} height={200} /> */}
-            <Link
+          <Image src='/images/letstalk.png'className='text-black' alt='Lets Talk' width={200} height={200} />
+            {/* <Link
               href="#contact"
               className="btn-primary inline-flex items-center gap-2 text-lg group px-10 py-5"
             >
               <Zap className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
              <p className='text-lg'>Lets talk</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
