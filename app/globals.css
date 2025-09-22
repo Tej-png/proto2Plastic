@@ -16,9 +16,17 @@
 /* Custom component styles */
 @layer components {
   /* Button styles */
+  .scroll-offset {
+    scroll-margin-top: 80px;
+  }
   .btn-primary {
     @apply bg-gradient-to-r from-blue-500 to-purple-900
     text-white px-6 py-3 rounded-lg font-semibold 
+           hover:shadow-lg transition-transform duration-300 transform hover:scale-105;
+  }
+
+  .btn-hero {
+    @apply 
            hover:shadow-lg transition-transform duration-300 transform hover:scale-105;
   }
 

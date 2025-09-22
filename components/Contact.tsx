@@ -106,7 +106,7 @@ export default function Contact() {
   }
 
   return (
-    <section id='contact' className="section-padding bg-gray-50">
+    <section id='contact' className="section-padding bg-gray-50 scroll-offset">
       <div className="container-custom">
         {/* Section header */}
         <div className="text-center mb-16">
