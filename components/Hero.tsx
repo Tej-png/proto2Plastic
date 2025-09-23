@@ -51,25 +51,31 @@ export default function Hero() {
         className="flex items-center"
       >
         <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main headline */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="hero-text">Print Your</span>{' '}
-              <span className="text-neutral-100">FUTURE</span>
-            </h1>
+            <div className='main-con bg-white/50 mb-5'>
+              <div className='op'>
+                <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                  <span className="hero-text">3D-Printing</span>{' '}
+                </h1>
 
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-black-200 mb-8 max-w-3xl mx-auto text-bold leading-relaxed">
-              Transform your wildest ideas into reality with cutting-edge 3D printing
-              technology. Fast, precise, and absolutely mind-blowing results.
-            </p>
+
+                <p className="text-xl md:text-2xl text-black-200 max-w-3xl mx-auto text-bold font-bold leading-relaxed">
+                  QUICK, SIMPLE & CHEAP
+                </p>
+
+              </div>
+            </div>
+           
+
+ 
 
             {/* Call-to-action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="#contact"
                 className=""
-              ><Image src='/images/letsTalk.png' className='text-black' alt='Lets Talk' width={300} height={300} /></Link>
+              ><Image src='/images/letsTalkW.png' className='text-black' alt='Lets Talk' width={500} height={500} /></Link>
               {/* <Link
               href="#contact"
               className="btn-primary inline-flex items-center gap-2 text-lg group px-10 py-5"
@@ -80,27 +86,27 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        {/* Scroll indicator */}
+        <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.5 }}
+              className="absolute bottom-24 sm:bottom-10 left-1/2 transform -translate-x-1/2 mb-5 "
+            >
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
+              >
+                <motion.div
+                  animate={{ y: [0, 12, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="w-1 h-3 bg-gray-400 rounded-full mt-2"
+                />
+              </motion.div>
+            </motion.div>
       </motion.div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-gray-400 rounded-full mt-2"
-          />
-        </motion.div>
-      </motion.div>
 
 
     </section>

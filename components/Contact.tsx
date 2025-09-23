@@ -14,7 +14,7 @@ const contactInfo = [
     title: 'Email Us',
     details: [
       'service@proto2plastic.com',
-      'We reply within 2 hours'
+      'We reply within a day'
     ],
     color: 'purple',
   },

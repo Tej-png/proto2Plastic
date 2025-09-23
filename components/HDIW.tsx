@@ -20,7 +20,7 @@ const servicesData = [
     {
         //   icon: delivery icon,
         title: 'Receive your newly created 3d model!',
-        description: 'We give you the option of picking up your 3D print at our Hamilton-Westdale workshop, or the print can be shipped directly to you (Additional costs).',
+        description: 'We give you the option of picking up your 3D print at our location, or the print can be shipped directly to you (Additional costs).',
         image : '/images/truck.png'
        
     },

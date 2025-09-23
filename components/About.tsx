@@ -105,6 +105,10 @@ export default function About() {
             >
               <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
               <ul className="space-y-3">
+              <li className="flex items-center">
+                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Guaranteed best price
+                </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
                   State-of-the-art 3D printing technology
@@ -116,10 +120,6 @@ export default function About() {
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
                   Fast turnaround times
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                  Competitive pricing
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-white rounded-full mr-3"></div>

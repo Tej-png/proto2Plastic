@@ -45,7 +45,7 @@ export default function Footer() {
                 viewport={{ once: true }}
               >
                 <Link href="/" className="text-2xl font-bold gradient-text">
-                  Print3D Pro
+                  Proto2Plastic
                 </Link>
                 <p className="mt-4 text-gray-400 leading-relaxed">
                   Transforming ideas into reality with cutting-edge 3D printing technology. 
