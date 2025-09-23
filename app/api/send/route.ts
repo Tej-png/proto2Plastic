@@ -11,16 +11,17 @@ export async function POST(req: Request) {
    
     const data = await req.json();
 
-    const { name, email, message } = data;
+    const { name, email, message, subject } = data;
 
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: 'parksc5@mcmaster.ca',
+      to: 'singh.bir978@gmail.com',
       subject: 'Hello world',
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong><br/>${message}</p>
       `,
     });

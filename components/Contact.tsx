@@ -30,6 +30,7 @@ const contactInfo = [
 ]
 
 type EmailPayload = {
+  name: string;
   email: string;
   subject: string;
   message: string;
@@ -86,6 +87,7 @@ export default function Contact() {
   
     try {
       await sendEmail({
+        name: name,
         email: email,
         subject: projectType,
         message: projectDetails,
