@@ -69,8 +69,8 @@ export default function Footer() {
               </motion.div>
             </div>
 
-            {/* Footer links */}
-            {Object.entries(footerLinks).map(([category, links], index) => (
+     
+            {/* {Object.entries(footerLinks).map(([category, links], index) => (
               <motion.div
                 key={category}
                 initial={{ opacity: 0, y: 20 }}
@@ -94,7 +94,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </motion.div>
-            ))}
+            ))} */}
           </div>
         </div>
 
