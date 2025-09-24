@@ -1,5 +1,5 @@
 {
-  "name": "print3d-pro",
+  "name": "proto2plastic",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "typescript": "^5.2.2"
   }
 }
+
 
 
 

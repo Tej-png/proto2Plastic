@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main headline */}
-            <div className='main-con bg-white/50 mb-5'>
+            <div className='main-con bg-white/50 mb-5 sm:px-10 sm:py-10'>
               <div className='op'>
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                   <span className="hero-text">3D-Printing</span>{' '}
@@ -61,28 +61,25 @@ export default function Hero() {
 
 
                 <p className="text-xl md:text-2xl text-black-200 max-w-3xl mx-auto text-bold font-bold leading-relaxed">
-                  QUICK, SIMPLE & CHEAP
+                  QUICK, SIMPLE, & CHEAP
                 </p>
 
               </div>
             </div>
-           
-
- 
 
             {/* Call-to-action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
+              {/* <Link
                 href="#contact"
                 className=""
-              ><Image src='/images/letsTalkW.png' className='text-black' alt='Lets Talk' width={500} height={500} /></Link>
-              {/* <Link
+              ><Image src='/images/letsTalkW.png' className='text-black' alt='Lets Talk' width={500} height={500} /></Link> */}
+              <Link
               href="#contact"
-              className="btn-primary inline-flex items-center gap-2 text-lg group px-10 py-5"
+              className="btn-primary inline-flex items-center gap-2 mt-5 text-lg group px-5 py-5"
             >
               <Zap className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
              <p className='text-lg'>Lets talk</p>
-            </Link> */}
+            </Link>
             </div>
           </div>
         </div>
